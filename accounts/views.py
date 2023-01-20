@@ -21,16 +21,22 @@ class RegisterUser(APIView):
             user=request.data
             print(request.data)
             userserializer=AccountSerializer(data=request.data)
+            print("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk")
             datas={} #to pass data to front end just for verification not nessery
             if userserializer.is_valid():
                 acc = userserializer.save()
+                print("llllllllllllllllllllllllllllllllllllllll")
                 if acc:
                     print('aadsfasdfasdf',acc)
-                    print("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk")
                     return Response(status=status.HTTP_201_CREATED)
                 else:
                     print('error is here',acc)    
             else:
+                if Account.objects.get(username=user['username']):
+                    datas["error"]={"username already present"} 
+                    return Response(datas,status=status.HTTP_205_RESET_CONTENT)
+
+                print("ooooooooooooooooooooooooooooooooooooooooooooooo")
                 return Response(status=status.HTTP_400_BAD_REQUEST)
         except:
             print("errors",userserializer.errors)
