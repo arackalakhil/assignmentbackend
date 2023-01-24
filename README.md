@@ -16,12 +16,15 @@ These instructions will get you a copy of the project up and running on your loc
 Built With
 Django - The web framework used
 React - The JavaScript library used for the front-end
-### Installing
 
+
+### API Documentation
+https://docs.google.com/document/d/1a7ckoaBfzXmH16EwtObuUzRF08F5byX3/edit?usp=share_link&ouid=112578930487288506398&rtpof=true&sd=true
+### Installing
 1. Clone the repository to your local machine
 ```bash
  git clone git@gitlab.com:makhil029/assignmentbackend.git
-## Install the required packages
+Install the required packages
 pip install -r requirements.txt
 Run the migrations to create the necessary tables in the database
 python manage.py makemigrations
