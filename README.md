@@ -17,6 +17,12 @@ Built With
 Django - The web framework used
 React - The JavaScript library used for the front-end
 
+### DB Design
+
+![DB design](https://user-images.githubusercontent.com/42874037/214238373-192e791c-e931-4cc9-89e5-b3d8092875fb.JPG)
+
+
+
 
 ### API Documentation
 https://docs.google.com/document/d/1a7ckoaBfzXmH16EwtObuUzRF08F5byX3/edit?usp=share_link&ouid=112578930487288506398&rtpof=true&sd=true
