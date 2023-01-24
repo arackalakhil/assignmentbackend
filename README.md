@@ -20,16 +20,13 @@ React - The JavaScript library used for the front-end
 
 1. Clone the repository to your local machine
 ```bash
-git clone git@gitlab.com:makhil029/assignmentbackend.git
-Install the required packages
-Copy code
+ git clone git@gitlab.com:makhil029/assignmentbackend.git
+## Install the required packages
 pip install -r requirements.txt
 Run the migrations to create the necessary tables in the database
-Copy code
 python manage.py makemigrations
 python manage.py migrate
 Run the development server
-Copy code
 python manage.py runserver
 Usage
 Go to http://localhost:8000/ to access the login page.
